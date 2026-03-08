@@ -15,7 +15,7 @@ export default function Navbar() {
   // }
 
   return (
-    <div className="h-25 fixed bottom-0 overflow-hidden z-50 flex justify-center items-center w-full  ">
+    <div className="h-25 fixed  bottom-0   z-50 flex justify-center items-center w-full  ">
       {/* <nav className={"nav    sm:bg-transparent "}> */}
       <motion.div
         initial={{ opacity: 0, scale: 0, translateY: 100 }}
@@ -24,25 +24,33 @@ export default function Navbar() {
           duration: 0.5,
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.4 },
         }}
-        className="nav-con backdrop-blur  shadow-2xl  relative flex justify-center p-1 m-auto gap-1 w-max rounded-md text-foreground bg-foreground/30"
+        className="nav-con    backdrop-blur-3xl bg-gray-500/10 border border-background   relative flex justify-center p-1 m-auto gap-1 w-max rounded-lg text-foreground  " style={{ boxShadow : "0px 0px 20px 0 #ffffff30" }}
       >
-        {/* <Link id="aboutBtn" href="/" className={"about transition-colors cursor-pointer flex items-center px-3 rounded-md gap-1 bg-background" + isLinkActive("/")}>
-              About
-            </Link> */}
-        <nav className="links *:rounded-md [&>*] *:bg-background *:bg-opacity-90 flex text-ntext gap-1 rounded-lg items-center text-sm ml:text-base *:transition-all *:hover:scale-105 *:hover:text-yellow-400">
+        <nav
+          className="links *:rounded-lg [&>*] *:bg-background *:bg-opacity-90 flex text-ntext gap-1 rounded-lg items-center text-sm ml:text-base *:py-1 *:px-3 *:transition-all *:hover:scale-107 *:hover:text-yellow-400"
+          
+        >
           <Link
-            className={"border border-transparent p-2 " + isLinkActive("/projects")}
+            id="aboutBtn"
+            href="/"
+            className={"about   transition-colors border border-transparent  " + isLinkActive("/")}
+          >
+            About
+          </Link>
+
+          <Link
+            className={"border border-transparent " + isLinkActive("/projects")}
             id="workBtn"
             // onClick={() => handleNavClick(1)}
-            target="_blank"
-            href="https://github.com/yousofo?tab=repositories"
-            // href="/projects"
+            // target="_blank"
+            // href="https://github.com/yousofo?tab=repositories"
+            href="/projects"
           >
             Projects
           </Link>
           <a
             href="https://drive.google.com/file/d/1jA9k2vd63ndzKSrnsgr8Gl2syp3GVHvc/view?usp=drive_link"
-            className="border border-transparent p-2 "
+            className="border border-transparent "
             target="_blank"
             id="contactBtn"
             // onClick={() => handleNavClick(2)}
@@ -50,15 +58,15 @@ export default function Navbar() {
             Resume
             {/* Contact &amp; CV */}
           </a>
-          {/* <Link
-            className={"border border-transparent p-2 " + isLinkActive("/projects")}
+          <Link
+            className={"border border-transparent p-2 "}
             id="workBtn"
             target="_blank"
             // onClick={() => handleNavClick(1)}
             href="https://github.com/yousofo?tab=repositories"
           >
             Github
-          </Link> */}
+          </Link>
           {/* <div className="border border-transparent [&>*]:rounded-md text-background  " id="contactBtn">
                 <ThemeSwitcher />
               </div> */}

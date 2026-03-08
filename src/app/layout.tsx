@@ -28,12 +28,15 @@ export default async function RootLayout({
   // await configureDeepSeek();
 
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-dvh  test w-screen overflow-hidden`}>
+    <html lang="en" className="overflow-hidden!">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-dvh dark test w-screen overflow-hidden`}
+      >
         <div className=" h-screen overflow-hidden">{children}</div>
-           <Navbar />
-         <div className="noise"></div>
+        <Navbar />
+        <div className="noise"></div>
         <div className="falling-particles"></div>
+        {/* <div className="absolute left-0 top-0 w-full h-full"></div> */}
         <Analytics />
       </body>
     </html>

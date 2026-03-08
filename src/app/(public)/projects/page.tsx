@@ -1,17 +1,13 @@
 "use client";
-import React from "react";
+import React, { Fragment } from "react";
 import * as motion from "motion/react-client";
 import Image from "next/image";
- import Project from "@/modules/projects/project/project";
-
+import Project, { IProject } from "@/modules/projects/Project/Project";
+import projects from "./projects.json";
 function Projects() {
-  const projects = Array.from({ length: 50 }, () => ({
-    name: "Project 1",
-    description: "Description of Project 1",
-    imageUrl: "/assets/projects/project.jpg",
-    videoUrl: "/assets/projects/cat.mp4",
-    skills: ["React", "Node.js", "MongoDB"],
-  }));
+  // const projects: IProject[] = [
+
+  // ];
 
   function isInViewPort(el: HTMLDivElement) {
     const rect = el.getBoundingClientRect();
@@ -19,12 +15,18 @@ function Projects() {
   }
 
   return (
-    <div
-       className="container no-scrollbar overflow-auto h-full mx-auto p-4 mt-[10vh] grid gap-8  sm:grid-cols-2 md:grid-cols-3 "
-    >
-      {projects.map((project, ix) => (
-        <Project key={ix} data={project} animationDelay={ix * 0.1} />
-      ))}
+    <div className="w-full h-full overflow-auto no-scrollbar ">
+      <div className="container max-w-5xl!    mx-auto p-4   grid gap-4 md:gap-8 grid-cols-1 pt-[20vh] md:grid-cols-1 md:pt-[7vh] pb-[20vh] md:pb-[10vh]  ">
+        {projects.map((project, ix) => (
+          <Fragment key={ix + "-fragment-hr-project"}>
+            <Project key={ix + "-project"} data={project as IProject} animationDelay={ix * 0.1} className=" " />
+            <hr
+              key={ix + "-hr-project"}
+              className={`border-gray-600/30 my-8 ${ix == projects.length - 1 ? "hidden" : ""}`}
+            />
+          </Fragment>
+        ))}
+      </div>
     </div>
   );
 }

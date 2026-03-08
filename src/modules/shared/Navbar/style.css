@@ -1,3 +1,4 @@
 .nav-link-active {
   background-color: rgba(0, 0, 0, 0.644);
+  color: oklch(85.2% 0.199 91.936);
 }

@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Restaurant App",
+    "description": "A Fullstack Restaurant Web/Desktop Application",
+    "demos": [
+      {
+        "type": "video",
+        "url": "/assets/projects/restaurant.mp4"
+      }
+    ],
+    "skills": ["Angular", ".NET", "Electron"]
+  },
+  {
+    "name": "E-Commerce Dashboard",
+    "description": "A Fullstack E-Commerce Management System",
+    "demos": [
+      {
+        "type": "image",
+        "url": "/assets/projects/ecommerce-01/demo1.png"
+      },
+      {
+        "type": "image",
+        "url": "/assets/projects/ecommerce-01/demo2.png"
+      },
+      {
+        "type": "image",
+        "url": "/assets/projects/ecommerce-01/demo3.png"
+      },
+      {
+        "type": "image",
+        "url": "/assets/projects/ecommerce-01/demo4.png"
+      },
+      {
+        "type": "image",
+        "url": "/assets/projects/ecommerce-01/demo5.png"
+      }
+    ],
+    "skills": ["Angular", ".NET"]
+  },
+  {
+    "name": "Commericial Portfolio",
+    "description": " ",
+    "demos": [
+      {
+        "type": "image",
+        "url": "/assets/projects/construction-01/demo1.png"
+      },
+      {
+        "type": "image",
+        "url": "/assets/projects/construction-01/demo2.png"
+      },
+      {
+        "type": "image",
+        "url": "/assets/projects/construction-01/demo3.png"
+      },
+      {
+        "type": "image",
+        "url": "/assets/projects/construction-01/demo4.png"
+      }
+    ],
+    "skills": ["NextJs","100% SEO Optimized"]
+  }
+]
