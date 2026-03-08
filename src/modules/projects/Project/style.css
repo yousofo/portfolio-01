@@ -1,0 +1,25 @@
+.project {
+  opacity: 0;
+ }
+
+.project-fade-in{
+  animation: fade-in 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+    translate: 0 200px;
+  }
+  50% {
+    opacity: 0.9;
+    scale: 1.1;
+    /* translate: 0 100px; */
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    translate: 0px;
+  }
+}
