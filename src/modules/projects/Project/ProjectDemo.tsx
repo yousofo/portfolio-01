@@ -9,7 +9,9 @@ function ProjectDemo({ data, className }: { data: IProjectDemo; className?: stri
         <video className="h-full w-full object-cover rounded" loop autoPlay muted src={data.url}></video>
       ) : (
         <Image
-          loading="lazy"
+          loading="eager"
+          decoding="async"
+          priority
           className={"h-fit w-full   object-cover  rounded" }
           src={data.url}
           width={500}
