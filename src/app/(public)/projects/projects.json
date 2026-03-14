@@ -1,16 +1,5 @@
 [
   {
-    "name": "Restaurant App",
-    "description": "A Fullstack Restaurant Web/Desktop Application",
-    "demos": [
-      {
-        "type": "video",
-        "url": "/assets/projects/restaurant.mp4"
-      }
-    ],
-    "skills": ["Angular", ".NET", "Electron"]
-  },
-  {
     "name": "E-Commerce Dashboard",
     "description": "A Fullstack E-Commerce Management System",
     "demos": [
@@ -38,6 +27,18 @@
     "skills": ["Angular", ".NET"]
   },
   {
+    "name": "Restaurant App",
+    "description": "A Fullstack Restaurant Web/Desktop Application",
+    "demos": [
+      {
+        "type": "video",
+        "url": "/assets/projects/restaurant.mp4"
+      }
+    ],
+    "skills": ["Angular", ".NET", "Electron"]
+  },
+
+  {
     "name": "Commericial Portfolio",
     "description": " ",
     "demos": [
@@ -58,6 +59,6 @@
         "url": "/assets/projects/construction-01/demo4.png"
       }
     ],
-    "skills": ["NextJs","100% SEO Optimized"]
+    "skills": ["NextJs", "100% SEO Optimized"]
   }
 ]
