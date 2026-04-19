@@ -48,7 +48,7 @@ export default function Navbar() {
           >
             Projects
           </Link>
-          <a
+          {/* <a
             href="https://drive.google.com/file/d/1jA9k2vd63ndzKSrnsgr8Gl2syp3GVHvc/view?usp=drive_link"
             className="border border-transparent "
             target="_blank"
@@ -56,8 +56,7 @@ export default function Navbar() {
             // onClick={() => handleNavClick(2)}
           >
             Resume
-            {/* Contact &amp; CV */}
-          </a>
+          </a> */}
           <Link
             className={"border border-transparent p-2 "}
             id="workBtn"
